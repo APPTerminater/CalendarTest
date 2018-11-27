@@ -12,8 +12,23 @@
         android:id="@+id/activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/theme_primary_dark"
-        />
+        android:background="@color/theme_primary_dark">
+
+        <Button
+            android:layout_marginTop="0dp"
+            android:id="@+id/searchButton"
+            android:drawableRight="@drawable/search"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="280dp"
+
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
 
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView

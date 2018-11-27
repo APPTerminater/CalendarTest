@@ -11,6 +11,7 @@
         app:mcv_showOtherDates="all"
         app:mcv_selectionColor="#00F"
         />
+
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/imcv_tem_mater_calendar_week"
         android:layout_width="match_parent"
