@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CalendarTest</string>
+    <string name="mapsearch">高德地图</string>
     <string-array name="custom_myweekdays">
         <item>日</item>
         <item>一</item>

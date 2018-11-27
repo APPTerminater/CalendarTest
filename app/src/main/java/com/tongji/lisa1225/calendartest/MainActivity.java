@@ -1,16 +1,14 @@
 package com.tongji.lisa1225.calendartest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.prolificinteractive.materialcalendarview.*;
 
-import com.github.tibolte.agendacalendarview.AgendaCalendarView;
-import com.github.tibolte.agendacalendarview.CalendarManager;
-import com.github.tibolte.agendacalendarview.CalendarPickerController;
-import com.github.tibolte.agendacalendarview.models.BaseCalendarEvent;
-import com.github.tibolte.agendacalendarview.models.CalendarEvent;
-import com.github.tibolte.agendacalendarview.models.DayItem;
-import com.github.tibolte.agendacalendarview.models.WeekItem;
+
+import android.view.*;
+import android.widget.Button;
+import android.view.View.OnClickListener;
 
 
 import android.support.v4.content.ContextCompat;
@@ -38,6 +36,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
+        Button btn1=(Button)findViewById(R.id.searchButton);
+        //给btn1绑定监听事件
+        btn1.setOnClickListener(new OnClickListener() {
+            @Override
+             public void onClick(View v) {
+                // 给bnt1添加点击响应事件
+                Intent intent =new Intent(MainActivity.this,GaodeActivity.class);
+                //启动
+                startActivity(intent);
+            }
+        });
+
+        //处理日历
         //MaterialCalendarView imcvTemMaterCalendarWeek=findViewById(R.id.imcv_tem_mater_calendar_week);
         MaterialCalendarView imcvTemMaterCalendarWeek=findViewById(R.id.liView);
         //imcvTemMaterCalendarWeek.state().edit() .setFirstDayOfWeek(Calendar.MONDAY) .setCalendarDisplayMode(CalendarMode.WEEKS) .commit();
@@ -55,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 // dealWithData(date);
             }
             });
+        //处理日历结束
 
     }
 }
