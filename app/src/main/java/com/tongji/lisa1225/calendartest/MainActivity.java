@@ -37,6 +37,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //新建行程按钮监听
+        //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
+        Button addbtn=(Button)findViewById(R.id.addButton);
+        //给btn1绑定监听事件
+        addbtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 给bnt1添加点击响应事件
+                Intent addintent =new Intent(MainActivity.this,AddActivity.class);
+                //启动
+                startActivity(addintent);
+            }
+        });
+        //高德搜索按钮监听结束
+
+        //高德搜索按钮监听
         //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
         Button btn1=(Button)findViewById(R.id.searchButton);
         //给btn1绑定监听事件
@@ -49,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //高德搜索按钮监听结束
 
         //处理日历
         //MaterialCalendarView imcvTemMaterCalendarWeek=findViewById(R.id.imcv_tem_mater_calendar_week);

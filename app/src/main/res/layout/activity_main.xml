@@ -16,6 +16,21 @@
 
         <Button
             android:layout_marginTop="0dp"
+            android:id="@+id/addButton"
+            android:drawableLeft="@drawable/add"
+            android:text="@string/addnew"
+            android:textColor="@color/colorSearch"
+            android:textSize="17dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="0dp"
+
+
+            />
+
+        <Button
+            android:layout_marginTop="0dp"
             android:id="@+id/searchButton"
             android:drawableRight="@drawable/search"
             android:text="@string/mapsearch"
@@ -24,9 +39,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="310dp"
-
-
+            android:layout_marginLeft="200dp"
             />
 
     </android.support.v7.widget.Toolbar>
