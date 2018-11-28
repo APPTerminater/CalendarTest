@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/bg">
+    android:background="@drawable/bg_add">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_toolbar"
@@ -16,7 +16,9 @@
             android:layout_marginLeft="155dp"
             android:text="@string/addnew"
             android:textColor="@color/PureWhite"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:fontFamily="@font/msyhbd"
+            />
 
     </android.support.v7.widget.Toolbar>
 
@@ -28,6 +30,8 @@
             android:layout_marginLeft="50dp"
             android:text="@string/destination"
             android:textSize="20dp"
+            android:fontFamily="@font/msyh"
+            android:textColor="@color/colorAdd"
             />
 
         <EditText
@@ -35,7 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/editsharp" />
+            android:background="@drawable/editsharp"
+            android:hint="@string/destination_hint"
+            />
 </TableRow>
 
 </TableLayout>
