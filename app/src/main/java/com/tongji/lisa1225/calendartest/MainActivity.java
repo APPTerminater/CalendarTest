@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(addintent);
             }
         });
-        //高德搜索按钮监听结束
+        //新建行程按钮监听结束
 
         //高德搜索按钮监听
         //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
