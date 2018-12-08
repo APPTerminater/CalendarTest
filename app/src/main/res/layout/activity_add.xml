@@ -30,7 +30,19 @@
             android:textSize="25dp"
             android:fontFamily="@font/msyhbd"
             />
+        <Button
+            android:layout_marginTop="0dp"
+            android:id="@+id/submitButton"
+            android:text="@string/submit"
+            android:textColor="@color/PureWhite"
+            android:textSize="20dp"
+            android:fontFamily="@font/msyh"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="90dp"
 
+            />
     </android.support.v7.widget.Toolbar>
 
 
@@ -165,6 +177,23 @@
             />
     </TableRow>
 
+    <RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/isremind"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/isremind"
+            android:textSize="20dp"
+            android:fontFamily="@font/msyh"
+            android:textColor="@color/colorAdd"
+            />
+
+
+    </RelativeLayout>
 </TableLayout>
 
 

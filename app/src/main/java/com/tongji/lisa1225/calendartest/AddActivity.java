@@ -61,6 +61,20 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             }
         });
         //返回按钮监听结束
+        //提交按钮监听
+        //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
+        Button submitbtn=(Button)findViewById(R.id.submitButton);
+        //给btn1绑定监听事件
+        submitbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 给bnt1添加点击响应事件
+                Intent addintent =new Intent(AddActivity.this,MainActivity.class);
+                //启动
+                startActivity(addintent);
+            }
+        });
+        //提交按钮监听结束
     }
 
     @Override

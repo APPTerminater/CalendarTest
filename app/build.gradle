@@ -32,7 +32,6 @@ dependencies {
     implementation 'io.reactivex:rxjava:1.2.4'
     implementation 'com.prolificinteractive:material-calendarview:1.4.3'
     //implementation 'com.amap.api:map2d:latest.integration'
-
     implementation 'com.jakewharton:butterknife:8.0.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
     implementation 'com.jzxiang.pickerview:TimePickerDialog:1.0.0'

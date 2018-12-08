@@ -13,6 +13,8 @@
     <string name="plan_cost_hint">请输入预计开销</string>
     <string name="introduction">旅行简介</string>
     <string name="introduction_hint">不超过20字符</string>
+    <string name="isremind">在出发前一天提醒我</string>
+    <string name="submit">提交</string>
 
     <string-array name="custom_myweekdays">
         <item>日</item>
