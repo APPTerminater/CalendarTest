@@ -26,8 +26,6 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:layout_marginLeft="0dp"
-
-
             />
 
         <Button
@@ -43,9 +41,8 @@
             android:layout_marginLeft="200dp"
             />
 
+
     </android.support.v7.widget.Toolbar>
-
-
 
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView

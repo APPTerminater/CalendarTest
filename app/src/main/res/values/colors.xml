@@ -7,4 +7,6 @@
     <color name="ControlNormal">#788be8</color>
     <color name="colorAdd">#4673c1</color>
     <color name="PureWhite">#FFFFFF</color>
+
+    <color name="white">#ffffff</color>
 </resources>
