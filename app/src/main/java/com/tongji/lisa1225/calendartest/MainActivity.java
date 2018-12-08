@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 给bnt1添加点击响应事件
-                Intent addintent =new Intent(MainActivity.this,AddActivity.class);
+                Intent addintent =new Intent(MainActivity.this,MyStepActivity.class);
                 //启动
                 startActivity(addintent);
             }
