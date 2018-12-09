@@ -8,5 +8,6 @@
     <color name="colorAdd">#4673c1</color>
     <color name="skyBlue">#4eeaf2</color>
     <color name="PureWhite">#FFFFFF</color>
+    <color name="Black"> #000000</color>
 
 </resources>

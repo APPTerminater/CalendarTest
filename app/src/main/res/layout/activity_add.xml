@@ -10,7 +10,7 @@
         android:id="@+id/activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/theme_primary_dark">
+        android:background="@color/colorPrimary">
         <Button
             android:layout_marginTop="0dp"
             android:id="@+id/backButton"
@@ -24,7 +24,7 @@
             />
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="85dp"
             android:text="@string/addnew"
             android:textColor="@color/PureWhite"
             android:textSize="25dp"
@@ -40,7 +40,7 @@
             android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="90dp"
+            android:layout_marginLeft="70dp"
 
             />
     </android.support.v7.widget.Toolbar>
@@ -49,8 +49,8 @@
 <TableRow>
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
             android:text="@string/destination"
             android:textSize="20dp"
             android:fontFamily="@font/msyh"
@@ -59,10 +59,11 @@
 
         <EditText
             android:id="@+id/destination"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/editsharp"
             android:hint="@string/destination_hint"
             android:fontFamily="@font/msyh"
@@ -79,7 +80,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:gravity="center"
             android:text="@string/current_time"
             android:textSize="20dp"
@@ -92,8 +93,8 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:gravity="center"
-            android:paddingRight="50dp"
-            android:paddingStart="15dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="15dp"
 
             android:textSize="20dp"
             android:fontFamily="@font/msyh"
@@ -105,13 +106,13 @@
     <RelativeLayout
         android:id="@+id/selectTime2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:gravity="center_vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:gravity="center"
             android:text="@string/current_time2"
             android:textSize="20dp"
@@ -124,7 +125,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:gravity="center"
-            android:paddingRight="50dp"
+            android:paddingRight="30dp"
             android:paddingLeft="15dp"
 
             android:textSize="20dp"
@@ -135,8 +136,8 @@
     <TableRow>
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
             android:text="@string/plan_cost"
             android:textSize="20dp"
             android:fontFamily="@font/msyh"
@@ -144,10 +145,11 @@
             />
         <EditText
             android:id="@+id/plan_cost"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/editsharp"
             android:hint="@string/plan_cost_hint"
             android:digits="1234567890."
@@ -158,7 +160,7 @@
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:text="@string/introduction"
             android:textSize="20dp"
             android:fontFamily="@font/msyh"
@@ -166,10 +168,11 @@
             />
         <EditText
             android:id="@+id/introduction"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/editsharp"
             android:hint="@string/introduction_hint"
             android:minLines="3"
@@ -182,10 +185,10 @@
         <CheckBox
             android:id="@+id/isremind"
             android:layout_width="wrap_content"
-            android:layout_height="65dp"
+            android:layout_height="40dp"
 
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
             android:text="@string/isremind"
             android:textSize="20dp"
             android:fontFamily="@font/msyh"

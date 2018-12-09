@@ -12,7 +12,7 @@
         android:id="@+id/activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/theme_primary_dark">
+        android:background="@color/colorPrimary">
         <Button
             android:layout_marginTop="0dp"
             android:id="@+id/backButton"
@@ -27,7 +27,7 @@
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="90dp"
             android:text="@string/mapsearch"
             android:textColor="@color/PureWhite"
             android:textSize="25dp"

@@ -142,15 +142,10 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
                                 String text = getDateToString(millseconds);
 
                                 time2=millseconds;
-                                if(time1*time2!=0)
+                                if(!DateWarning(2))
                                 {
-                                    if(time2<time1)
-                                    {
-                                        time2=0;
-                                        return;
-                                    }
+                                    currentTime2.setText(text);
                                 }
-                                currentTime2.setText(text);
                             }
                         })
                         .setCancelStringId("取消")
@@ -183,20 +178,35 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
         String text = getDateToString(millseconds);
 
         time1=millseconds;
-        if(time1*time2!=0)
+        if(!DateWarning(1))
         {
-            if(time2<time1)
-            {
-                time1=0;
-                return;
-            }
+            currentTime.setText(text);
         }
-        currentTime.setText(text);
+
     }
 
     public String getDateToString(long time) {
         Date d = new Date(time);
         return sf.format(d);
+    }
+    public boolean DateWarning(int num){
+        if(time1*time2!=0)
+        {
+            if(time2<time1)
+            {
+                switch (num)
+                {
+                    case 1:
+                        time1=0;
+                        break;
+                    case 2:
+                        time2=0;
+                        break;
+                }
+                return true;
+            }
+        }
+        return false;
     }
 }
 

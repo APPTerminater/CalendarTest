@@ -1,6 +1,8 @@
 package com.tongji.lisa1225.calendartest;
 
+import android.app.ActionBar;
 import android.content.Intent;
+//import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.prolificinteractive.materialcalendarview.*;
@@ -27,6 +29,7 @@ import java.util.Locale;
 import butterknife.*;
 
 public class MainActivity extends AppCompatActivity {
+    ActionBar actionBar; //声明ActionBar
     //@BindView(R.id.imcv_tem_mater_calendar_week)
     //MaterialCalendarView imcvTemMaterCalendarWeek=findViewById(R.id.calendarView);
 
@@ -36,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //actionBar = getActionBar(); //得到ActionBar
+        //actionBar.hide(); //隐藏ActionBar
         //新建行程按钮监听
         //view层的控件和业务层的控件，靠id关联和映射  给btn1赋值，即设置布局文件中的Button按钮id进行关联
         Button addbtn=(Button)findViewById(R.id.addButton);
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 给bnt1添加点击响应事件
-                Intent addintent =new Intent(MainActivity.this,MyStepActivity.class);
+                Intent addintent =new Intent(MainActivity.this,AddActivity.class);
                 //启动
                 startActivity(addintent);
             }
@@ -83,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) { //在这个方法中处理选中事件。
                 // dealWithData(date);
+                // 给bnt1添加点击响应事件
+                Intent dateintent =new Intent(MainActivity.this,DateActivity.class);
+                //启动
+                startActivity(dateintent);
             }
             });
         //处理日历结束
